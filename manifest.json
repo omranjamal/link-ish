@@ -5,7 +5,6 @@
     "description": "Makes JavaScript powered fake \"links\" behave kinda like normal links.",
     "permissions": [
         "scripting",
-        "activeTab",
         "webNavigation",
         "tabs",
         "storage"
