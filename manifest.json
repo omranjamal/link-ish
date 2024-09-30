@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Link-ish",
+    "version": "1.0",
+    "description": "Makes JavaScript powered fake \"links\" behave kinda like normal links.",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "webNavigation",
+        "tabs",
+        "storage"
+    ],
+    "action": {
+        "default_icon": {
+            "128": "assets/disabled.png"
+        }
+    },
+    "icons": {
+        "128": "assets/enabled.png"
+    },
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
