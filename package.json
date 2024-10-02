@@ -5,7 +5,7 @@
   "private": true,
   "main": "scripts/background.js",
   "scripts": {
-    "build:package": "rm -f *.zip && zip ./linkish-$(jq -r '.version' package.json).zip -r ./ -x '*.zip' 'package.json' '*.git/*'"
+    "build:package": "rm -f *.zip && zip ./linkish-$(jq -r '.version' manifest.json).zip -r ./ -x '*.zip' 'package.json' '*.git/*'"
   },
   "keywords": [],
   "author": "Omran Jamal <omran@omranjamal.me>",
