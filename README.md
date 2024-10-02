@@ -1,4 +1,8 @@
+![Linkish Icon](assets/enabled.png)
+
 # Link-ish
+
+[![Link-ish on Chrome Web Store Button](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chromewebstore.google.com/detail/link-ish/aomealgaegaafnegknodnlpmihpjdkek)
 
 This extension allows you to force a "fake link" (that was created using JS click handlers) to behave somewhat like a real link.
 
@@ -22,16 +26,9 @@ This is a WIP.
 
 ### Chrome Web Store
 
-We are currently in the process of getting it review and approved for the Chrome Web Store, but till then you will have to use it in dev mode.
+Install via the [Chrome Web Store](https://chromewebstore.google.com/detail/link-ish/aomealgaegaafnegknodnlpmihpjdkek)
 
-### Unpacked (DEV MODE)
-
-1. Clone this repository `git clone git@github.com:omranjamal/link-ish.git`
-2. Open `chrome://extensions/` on Chrome
-3. In the top-right corner, turn on Developer Mode.
-4. Click the `Load Unpacked` button.
-5. Navigate to the `link-ish` directory and select it.
-6. Done.
+[![Link-ish on Chrome Web Store Button](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png)](https://chromewebstore.google.com/detail/link-ish/aomealgaegaafnegknodnlpmihpjdkek)
 
 ### Usage
 
@@ -41,6 +38,34 @@ Once you're on a web page like [Daraz](https://www.daraz.com.bd/), and you happe
 2. `Ctrl`+`Click` the "fake-link"
 3. ????
 4. Profit.
+
+### Development
+
+#### Build Dependencies
+
+```bash
+# Assuming you use a debian based system (sorry to arch users)
+sudo apt install zip jq
+```
+
+#### Install Unpacked (DEV MODE)
+
+1. Clone this repository `git clone git@github.com:omranjamal/link-ish.git`
+2. Open `chrome://extensions/` on Chrome
+3. In the top-right corner, turn on Developer Mode.
+4. Click the `Load Unpacked` button.
+5. Navigate to the `link-ish` directory and select it.
+6. Done.
+
+#### Packaging
+
+To package your build to submit to the Chrome Web Store use the following command.
+
+```bash
+pnpm run build:package
+```
+
+You should see a file with the name in the format `linkish-[VERSION].zip`
 
 ## Backstory
 
