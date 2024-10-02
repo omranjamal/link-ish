@@ -1,8 +1,16 @@
 {
     "manifest_version": 3,
+    "icons": {
+        "128": "assets/enabled.png"
+    },
     "name": "Link-ish",
-    "version": "1.0.1",
     "description": "Makes JavaScript powered fake \"links\" behave kinda like normal links.",
+    "homepage_url": "https://github.com/omranjamal/link-ish",
+    "author": {
+        "email": "omran@omranjamal.me"
+    },
+    "version": "1.0.1",
+    "incognito": "split",
     "permissions": [
         "scripting",
         "webNavigation",
@@ -13,9 +21,6 @@
         "default_icon": {
             "128": "assets/disabled.png"
         }
-    },
-    "icons": {
-        "128": "assets/enabled.png"
     },
     "background": {
         "service_worker": "scripts/background.js"
