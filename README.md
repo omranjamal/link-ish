@@ -77,4 +77,4 @@ MIT
 
 ## Author
 
-Made with 🩷, but by [Omran Jamal](https://omranjamal.me)'s hate for fake links.
+Made with 🩷 & but powered by [Omran Jamal](https://omranjamal.me)'s hate for fake links.
