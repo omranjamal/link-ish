@@ -12,10 +12,6 @@ function resolveActionIcon() {
     const activeTabHost = activeTabURL.host;
     const activeTabProtocol = activeTabURL.protocol;
 
-    if (activeTabProtocol !== "http:" && activeTabProtocol !== "https:") {
-      return;
-    }
-
     chrome.storage.local.get([activeTabHost], (result) => {
       const isEnabled = !!result[activeTabHost];
 
@@ -115,4 +111,8 @@ chrome.action.onClicked.addListener((tab) => {
       });
     });
   });
+});
+
+chrome.tabs.onUpdated.addListener(() => {
+  resolveActionIcon();
 });
