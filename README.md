@@ -74,3 +74,7 @@ This extension was primarity created to make [Daraz](https://www.daraz.com.bd/)'
 ## License
 
 MIT
+
+## Author
+
+Made with 🩷, but by [Omran Jamal](https://omranjamal.me)'s hate for fake links.
