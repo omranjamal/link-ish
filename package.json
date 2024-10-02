@@ -1,0 +1,13 @@
+{
+  "name": "link-ish",
+  "version": "1.0.1",
+  "description": "Makes JavaScript powered fake \"links\" behave kinda like normal links.",
+  "private": true,
+  "main": "scripts/background.js",
+  "scripts": {
+    "build:package": "rm -f *.zip && zip ./linkish-$(jq -r '.version' package.json).zip -r ./ -x '*.zip' 'package.json' '*.git/*'"
+  },
+  "keywords": [],
+  "author": "Omran Jamal <omran@omranjamal.me>",
+  "license": "MIT"
+}
