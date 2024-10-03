@@ -30,7 +30,7 @@ Install via the [Chrome Web Store](https://chromewebstore.google.com/detail/link
 
 [![Link-ish on Chrome Web Store Button](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png)](https://chromewebstore.google.com/detail/link-ish/aomealgaegaafnegknodnlpmihpjdkek)
 
-### Usage
+## Usage
 
 Once you're on a web page like [Daraz](https://www.daraz.com.bd/), and you happen upon a "fake-link" made with JS:
 
@@ -39,16 +39,16 @@ Once you're on a web page like [Daraz](https://www.daraz.com.bd/), and you happe
 3. ????
 4. Profit.
 
-### Development
+## Development
 
-#### Build Dependencies
+### Build Dependencies
 
 ```bash
 # Assuming you use a debian based system (sorry to arch users)
 sudo apt install zip jq
 ```
 
-#### Install Unpacked (DEV MODE)
+### Install Unpacked (DEV MODE)
 
 1. Clone this repository `git clone git@github.com:omranjamal/link-ish.git`
 2. Open `chrome://extensions/` on Chrome
@@ -57,7 +57,7 @@ sudo apt install zip jq
 5. Navigate to the `link-ish` directory and select it.
 6. Done.
 
-#### Packaging
+### Packaging
 
 To package your build to submit to the Chrome Web Store use the following command.
 
